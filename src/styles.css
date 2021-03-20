@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+  background: rgba(163, 210, 202, 0.6);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 55px;
+  color: #eb5e0b;
+}
+
+h2 {
+  line-height: 0.8;
+  font-size: 22px;
+}
+
+h3 {
+  line-height: 2;
+  font-size: 18px;
+  font-weight: bold;
+  color: #eb5e0b;
+}
+
+p {
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+footer {
+  font-family: monospace;
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+h2.city {
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.btn {
+  border: solid 2px #5eaaa8;
+  border-radius: 10px;
+}
+
+.search-button {
+  margin-right: 5px;
+}
+.search-button .fa-search,
+.location-button .fa-map-marker-alt {
+  color: #ffffff;
+  transition: all 150ms ease-in-out;
+}
+
+.search-button:hover,
+.location-button:hover {
+  background: #5eaaa8;
+}
+
+.current-weather {
+  font-size: 100px;
+  color: #fbd87b;
+}
+
+.temp-units {
+  font-size: 36px;
+}
+.celsius,
+.fahrenheit {
+  text-decoration: none;
+  color: #eb5e0b;
+}
+
+.celsius:hover,
+.fahrenheit:hover {
+  color: #eb5e0b;
+  text-decoration: underline;
+}
+
+.celsius:focus,
+.fahrenheit:focus {
+  text-decoration: underline;
+}
+
+.card {
+  border: solid 2px #eb5e0b;
+  background: #f8f1f1;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.forecast {
+  font-size: 30px;
+  color: #fbd87b;
+}
