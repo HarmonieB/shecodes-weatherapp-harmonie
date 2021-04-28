@@ -1,3 +1,34 @@
+function getFormattedDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  let currentDay = days[date.getDay()];
+  let currentDate = date.getDate();
+  let currentMonth = months[date.getMonth()];
+  return `${currentDay} ${currentDate} ${currentMonth}`;
+}
+
+// Display City & Weather Data
 function showCelsius() {
   let cityInput = document.querySelector("#city-input");
   let unit = "metric";
@@ -68,36 +99,6 @@ function getCity(position) {
 
 function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(getCity);
-}
-
-function getFormattedDate(date) {
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ];
-  let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ];
-  let currentDay = days[date.getDay()];
-  let currentDate = date.getDate();
-  let currentMonth = months[date.getMonth()];
-  return `${currentDay} ${currentDate} ${currentMonth}`;
 }
 
 //Current time setup
