@@ -16,17 +16,16 @@
 <body>
   <div class="container">
     <div class="container-fluid">
-      <form class="d-flex" id="city-form">
+      <form class="d-flex col-12" id="city-form">
         <input class="form-control me-2" type="search" placeholder="Enter a city" autocomplete="off" autofocus="on"
           id="city-input" />
         <button class="btn search-button" type="submit">
           <i class="fas fa-search"> </i>
         </button>
+        <button class="btn location-button" id="location-button" type="submit">
+          <i class="fas fa-map-marker-alt"></i>
+        </button>
       </form>
-      <br />
-      <button class="btn location-button" id="location-button" type="submit">
-        <i class="fas fa-map-marker-alt"></i>
-      </button>
     </div>
     <h1>
       <span class="current-temperature" id="current-temperature"></span>
