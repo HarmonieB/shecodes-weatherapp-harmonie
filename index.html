@@ -16,9 +16,15 @@
 <body>
   <div class="container">
     <div class="container-fluid">
-      <form class="d-flex col-12" id="city-form">
-        <input class="form-control me-2" type="search" placeholder="Enter a city" autocomplete="off" autofocus="on"
-          id="city-input" />
+      <form class="d-flex col-12" id="city-search-form">
+        <input 
+        class="form-control me-2" 
+        id="city-input"
+        type="search"
+        placeholder="Enter a city" 
+        autocomplete="off" 
+        autofocus="on"
+        />
         <button class="btn search-button" type="submit">
           <i class="fas fa-search"> </i>
         </button>
@@ -28,7 +34,7 @@
       </form>
     </div>
     <h1>
-      <span class="current-temperature" id="current-temperature"></span>
+      <span class="current-temperature" id="current-temperature">19</span>
       <span class="temp-units">
         <sup>
           <a href="#" class="celsius" id="celsius">˚C</a> |
